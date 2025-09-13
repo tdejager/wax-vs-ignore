@@ -8,6 +8,17 @@ for this example.
 
 The test is that I include a number of globs that we typically use, and only ignore all hidden folders for both wax and ignore.
 
+These are the globs we test against:
+
+```
+    "**/*.{c,cc,cxx,cpp,h,hpp,hxx}",
+    "**/*.{cmake,cmake.in}",
+    "**/CMakeFiles.txt",
+```
+
+And we use the "." as the root.
+This project also contains a number of dummy files so that there are at least some matches.
+
 An example run on my M1 PRO macbook:
 
 ```
