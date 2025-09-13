@@ -16,6 +16,8 @@ These are the globs we test against:
     "**/CMakeFiles.txt",
 ```
 
+For wax we have a `not` expression to filter out negative matches and a `hidden(true)` for ignore.
+
 And we use the "." as the root.
 This project also contains a number of dummy files so that there are at least some matches.
 
