@@ -1,0 +1,20 @@
+[workspace]
+authors = ["Tim de Jager <tdejager89@gmail.com>"]
+channels = ["https://prefix.dev/conda-forge"]
+name = "test-wax"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+main = "cargo run"
+test = "cargo test"
+bench = {cmd = "cargo bench --bench wax_vs_ignore", depends-on = ["test"] }
+
+[dependencies]
+# This is just to fill up space
+python = ">=3.13.7,<3.14"
+compilers = ">=1.11.0,<2"
+cmake = ">=4.1.1,<5"
+opencv = ">=4.12.0,<5"
+# This we can use to compile
+rust = ">=1.89.0,<1.90"

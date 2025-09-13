@@ -1,0 +1,15 @@
+[package]
+name = "wax-vs-ignore"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wax = "0.6"
+ignore = "0.4"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "wax_vs_ignore"
+harness = false
