@@ -27,5 +27,5 @@ Here you can see the results, I still think 4ms is long for ignore but turning o
 
 ## Test this yourself
 
-1. Make sure you have pixi.
+1. Make sure you have pixi. (`curl -fsSL https://pixi.sh/install.sh | sh`)
 2. `pixi r bench` should compile and run the sanity checks plus the bench. This will also fill up the .pixi folder with a lot of stuff, filling it with more stuffs seems to make wax slower.
