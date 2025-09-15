@@ -24,7 +24,8 @@ This project also contains a number of dummy files so that there are at least so
 
 Still, there seem to be some differences but it does not seem to traverse into hidden directories at the root level at least.
 
-Here you can see the results, I still think 4ms is long for ignore but turning on all default filters seems to get it back to about 1ms.
+<img width="1201" height="228" alt="image" src="https://github.com/user-attachments/assets/b4adc334-05a9-452d-a1df-fadb62ee2e69" />
+
 
 ## Test this yourself
 
