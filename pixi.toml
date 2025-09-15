@@ -9,6 +9,8 @@ version = "0.1.0"
 main = "cargo run"
 test = "cargo test"
 bench = {cmd = "cargo bench --bench wax_vs_ignore", depends-on = ["test"] }
+bench-no-test = {cmd = "cargo bench --bench wax_vs_ignore"}
+opencv-src = "mkdir -p external && git clone --depth 1 https://github.com/opencv/opencv.git external/opencv"
 
 [dependencies]
 # This is just to fill up space

@@ -4,8 +4,10 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-wax = "0.6"
+wax = { git = "https://github.com/olson-sean-k/wax.git" }
 ignore = "0.4"
+globwalk = "0.9"
+fast-glob = "^0.4.0"
 
 [dev-dependencies]
 criterion = "0.5"

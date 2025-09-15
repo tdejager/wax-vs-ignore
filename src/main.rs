@@ -1,6 +1,9 @@
 use std::path::Path;
 // Use items from the library crate of this package
-use wax_vs_ignore::{collect_with_ignore, collect_with_wax, PATTERNS};
+use wax_vs_ignore::{
+    collect_with_bfs_fastglob, collect_with_globwalk, collect_with_ignore, collect_with_wax,
+    PATTERNS,
+};
 
 fn main() {
     let root = Path::new(".");
@@ -12,4 +15,12 @@ fn main() {
         Ok(v) => println!("ignore total matches: {}", v.len()),
         Err(e) => eprintln!("ignore error: {}", e),
     }
+    match collect_with_globwalk(root, PATTERNS) {
+        Ok(v) => println!("globwalk total matches: {}", v.len()),
+        Err(e) => eprintln!("ignore error: {}", e),
+    };
+    match collect_with_bfs_fastglob(root, PATTERNS, &vec!["**/.*/**"]) {
+        Ok(v) => println!("custom bfs total matches: {}", v.len()),
+        Err(e) => eprintln!("ignore error: {}", e),
+    };
 }
