@@ -20,20 +20,9 @@ For wax we have a `not` expression to filter out negative matches and a `hidden(
 And we use the "." as the root.
 This project also contains a number of dummy files so that there are at least some matches.
 
-An example run on my M1 PRO macbook:
+**Note, I found out that on the main branch of wax, things are much improved**
 
-```
-wax_total               time:   [372.56 ms 373.45 ms 374.44 ms]
-                        change: [-1.0384% -0.5491% -0.0880%] (p = 0.03 < 0.05)
-                        Change within noise threshold.
-Found 15 outliers among 100 measurements (15.00%)
-  5 (5.00%) high mild
-  10 (10.00%) high severe
-
-ignore_total            time:   [4.7775 ms 4.7876 ms 4.7998 ms]
-                        change: [+3.7295% +4.1447% +4.5423%] (p = 0.00 < 0.05)
-                        Performance has regressed.
-```
+Still, there seem to be some differences but it does not seem to traverse into hidden directories at the root level at least.
 
 Here you can see the results, I still think 4ms is long for ignore but turning on all default filters seems to get it back to about 1ms.
 
