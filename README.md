@@ -36,3 +36,6 @@ Still, there seem to be some differences but it does not seem to traverse into h
 ## To use a bigger example
 Run `pixi r opencv-src` to get the opencv source.
 Add it to your `.git/info/exclude` file to not have it interfere when testing `.gitignore` with different glob libraries.
+
+<img width="752" height="140" alt="image" src="https://github.com/user-attachments/assets/9bc0298f-842d-4def-b0c9-acfb5bbb2433" />
+
